@@ -1,0 +1,24 @@
+
+body{
+    font-family: 'Ruslan Display', cursive;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid ;
+    color: rgba(0,0,0,0.3);
+    border-bottom: 0px;
+    align-items: center;
+}
+.identity{
+    color: black;
+    
+    
+}
+.name{
+    color: black;
+}
+.applyFlex{
+    display: flex;
+    justify-content: center;
+}

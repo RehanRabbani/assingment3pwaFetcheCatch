@@ -2,6 +2,7 @@ var cacheName = 'api-demo';
 var dataCacheName ='my-api-demo';
 var filesToCache = [
   'style.css',
+  'styles.css',
   'script.js',
   
 

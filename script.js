@@ -15,6 +15,18 @@ if ('serviceWorker' in navigator) {
       })
       .then(function(users){
           console.log("data from network",users);
+          let elShow=document.querySelector('#list');
+          for(let i=0;i<=users.length;i++){
+          elShow.innerHTML+=`<section class="show">
+          <p class="identity">UserID: ${users[i].id}</p>
+          <p class="name">UserName:${users[i].login}</p>
+  
+      </section>`}
+        //   for(let i=0;i<=users.length;i++){
+        //   console.log('user id',users[i].id);
+        //   console.log('name',users[i].login);
+          
+        //   }
       })
       .catch(function(error){
           console.log("notworking");
@@ -29,6 +41,13 @@ if ('serviceWorker' in navigator) {
   })
   .then(function(data){
       console.log("data from cache",data);
+      let elShow=document.querySelector('#list');
+      for(let i=0;i<=users.length;i++){
+      elShow.innerHTML+=`<section class="show">
+      <p class="identity"> ${users[i].id}</p>
+      <p class="name">${users[i].login}</p>
+
+  </section>`}
   })
   .catch(function(){
       console.log("error");
